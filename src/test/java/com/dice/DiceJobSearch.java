@@ -1,5 +1,6 @@
 package com.dice;
 
+import java.time.LocalDateTime;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -51,6 +52,8 @@ public static void main(String[] args) throws InterruptedException {
 	}else {
 		System.out.println("step fail:" + keyword+ "search returned" + countResult + "results in"+ location);
 	}
+	
+	System.out.println("test complite"+ LocalDateTime.now());
 	
 	Thread.sleep(8000);
 	driver.close();
